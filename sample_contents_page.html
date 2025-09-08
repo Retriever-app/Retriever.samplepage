@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentsTitle1 - Retriever サンプルコンテンツ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .content-header {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .content-thumbnail {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin: 0 auto 30px;
+            background: #f0f0f0;
+        }
+        .content-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+        .content-description {
+            font-size: 1.1rem;
+            color: #6c757d;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        .chapter-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .chapter-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #007AFF;
+            transition: background-color 0.2s ease;
+        }
+        .chapter-item:hover {
+            background: #e9ecef;
+        }
+        .chapter-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        .chapter-description {
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+        .taglink-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .taglink-item {
+            background: #007AFF;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        .taglink-item:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+        .related-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .related-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .related-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        .related-thumbnail {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background: #e9ecef;
+        }
+        .related-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        .related-description {
+            color: #6c757d;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .content-header {
+                padding: 30px 20px;
+            }
+            .content-title {
+                font-size: 2rem;
+            }
+            .content-thumbnail {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+            .section {
+                padding: 20px;
+            }
+            .related-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- コンテンツヘッダー -->
+        <div class="content-header">
+            <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever01.png" alt="ContentsTitle1" class="content-thumbnail">
+            <h1 class="content-title">ContentsTitle1</h1>
+            <p class="content-description">This application allows you to specify the elements you want to extract in a Project, enabling you to extract only those specified elements from HTML and display them in a unified layout. It is a web browser that provides stress-free and safe internet browsing without displaying dangerous advertisements or other harmful content.</p>
+        </div>
+
+        <!-- Chapter セクション -->
+        <div class="section">
+            <h2 class="section-title">Chapter</h2>
+            <ul class="chapter-list">
+                <li class="chapter-item">
+                    <div class="chapter-title">Chapter1</div>
+                    <div class="chapter-description">Retrieverアプリケーションの基本的な使用方法と設定について説明します。プロジェクトの作成から基本的なルール設定まで、初心者でも簡単に始められる内容を紹介します。</div>
+                </li>
+                <li class="chapter-item">
+                    <div class="chapter-title">Chapter2</div>
+                    <div class="chapter-description">高度な抽出ルールの設定方法について詳しく解説します。CSSセレクタやJsonPathを使用した複雑なデータ抽出のテクニックを学ぶことができます。</div>
+                </li>
+                <li class="chapter-item">
+                    <div class="chapter-title">Chapter3</div>
+                    <div class="chapter-description">セキュリティ機能とプライバシー保護について説明します。パスコード保護、生体認証、シークレットモードなどの機能の使い方を紹介します。</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Taglink セクション -->
+        <div class="section">
+            <h2 class="section-title">Taglink</h2>
+            <div class="taglink-container">
+                <a href="#" class="taglink-item">Picture</a>
+                <a href="#" class="taglink-item">PDF</a>
+                <a href="#" class="taglink-item">Video</a>
+            </div>
+        </div>
+
+        <!-- Related セクション -->
+        <div class="section">
+            <h2 class="section-title">Related</h2>
+            <div class="related-container">
+                <!-- Related Item 2 (ListTitle2) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever02.png" alt="ListTitle2" class="related-thumbnail">
+                    <div class="related-title">ListTitle2</div>
+                    <div class="related-description">柔軟なルール設定により、CSSセレクタやJsonPathを使用して、Webサイトから必要な情報を正確に抽出するルールを作成できます。</div>
+                </div>
+                
+                <!-- Related Item 3 (ListTitle3) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever03.png" alt="ListTitle3" class="related-thumbnail">
+                    <div class="related-title">ListTitle3</div>
+                    <div class="related-description">高度なセキュリティ機能を搭載し、パスコード保護、生体認証、シークレットモードなど、プライバシーを守る多層のセキュリティ機能を提供します。</div>
+                </div>
+                
+                <!-- Related Item 4 (ListTitle4) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever04.png" alt="ListTitle4" class="related-thumbnail">
+                    <div class="related-title">ListTitle4</div>
+                    <div class="related-description">効率的なキャッシュ管理により、画像やPDFなどのメディアファイルを効率的にキャッシュし、オフラインでも快適に閲覧できます。</div>
+                </div>
+                
+                <!-- Related Item 5 (ListTitle5) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever05.png" alt="ListTitle5" class="related-thumbnail">
+                    <div class="related-title">ListTitle5</div>
+                    <div class="related-description">直感的なUIにより、Grid表示、リスト表示、タグ表示など、コンテンツに応じた最適な表示モードを選択可能です。</div>
+                </div>
+                
+                <!-- Related Item 6 (ListTitle6) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever06.png" alt="ListTitle6" class="related-thumbnail">
+                    <div class="related-title">ListTitle6</div>
+                    <div class="related-description">QRコード共有機能により、作成したプロジェクトルールをQRコードで簡単に共有・複製できます。</div>
+                </div>
+                
+                <!-- Related Item 7 (ListTitle7) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever07.png" alt="ListTitle7" class="related-thumbnail">
+                    <div class="related-title">ListTitle7</div>
+                    <div class="related-description">お気に入り・履歴管理機能により、重要なコンテンツをお気に入りに登録し、閲覧履歴から素早くアクセスできます。</div>
+                </div>
+                
+                <!-- Related Item 8 (ListTitle8) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever08.png" alt="ListTitle8" class="related-thumbnail">
+                    <div class="related-title">ListTitle8</div>
+                    <div class="related-description">高度な抽出機能により、動的コンテンツや遅延読み込みコンテンツも適切に処理し、確実にデータを取得できます。</div>
+                </div>
+                
+                <!-- Related Item 9 (ListTitle9) -->
+                <div class="related-item">
+                    <img src="https://retriever-app.github.io/Retriever.samplepage/Retriever09.png" alt="ListTitle9" class="related-thumbnail">
+                    <div class="related-title">ListTitle9</div>
+                    <div class="related-description">パフォーマンス最適化により、大量のデータでも高速に処理し、スムーズなユーザー体験を提供します。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
