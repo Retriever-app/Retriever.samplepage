@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retriever サンプルリストページ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1d1d1f;
+        }
+        .list-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .list-item {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #e5e5e7;
+        }
+        .list-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        .item-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #8e8e93;
+        }
+        .item-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+            line-height: 1.3;
+        }
+        .item-description {
+            color: #6c757d;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+        .item-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #007AFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+        .item-link:hover {
+            background: #0056b3;
+        }
+        .item-number {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: #007AFF;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .list-item {
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            .list-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Retriever サンプルコンテンツ一覧</h1>
+        
+        <div class="list-container">
+            <!-- List Item 1 -->
+            <div class="list-item">
+                <div class="item-number">1</div>
+                <div class="item-thumbnail">📱</div>
+                <h2 class="item-title">ListTitle1</h2>
+                <p class="item-description">このアプリケーションは、プロジェクトで抽出したい要素を指定することで、HTMLから指定された要素のみを抽出し、統一されたレイアウトで表示することができます。危険な広告やその他の有害なコンテンツを表示することなく、ストレスフリーで安全なインターネット閲覧を提供するWebブラウザです。</p>
+                <a href="sample_contents_page.html" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 2 -->
+            <div class="list-item">
+                <div class="item-number">2</div>
+                <div class="item-thumbnail">🔧</div>
+                <h2 class="item-title">ListTitle2</h2>
+                <p class="item-description">柔軟なルール設定により、CSSセレクタやJsonPathを使用して、Webサイトから必要な情報を正確に抽出するルールを作成できます。複雑なWebサイトでも、必要な情報だけを効率的に取得できます。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 3 -->
+            <div class="list-item">
+                <div class="item-number">3</div>
+                <div class="item-thumbnail">🔒</div>
+                <h2 class="item-title">ListTitle3</h2>
+                <p class="item-description">高度なセキュリティ機能を搭載し、パスコード保護、生体認証、シークレットモードなど、プライバシーを守る多層のセキュリティ機能を提供します。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 4 -->
+            <div class="list-item">
+                <div class="item-number">4</div>
+                <div class="item-thumbnail">💾</div>
+                <h2 class="item-title">ListTitle4</h2>
+                <p class="item-description">効率的なキャッシュ管理により、画像やPDFなどのメディアファイルを効率的にキャッシュし、オフラインでも快適に閲覧できます。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 5 -->
+            <div class="list-item">
+                <div class="item-number">5</div>
+                <div class="item-thumbnail">📱</div>
+                <h2 class="item-title">ListTitle5</h2>
+                <p class="item-description">直感的なUIにより、Grid表示、リスト表示、タグ表示など、コンテンツに応じた最適な表示モードを選択可能です。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 6 -->
+            <div class="list-item">
+                <div class="item-number">6</div>
+                <div class="item-thumbnail">📤</div>
+                <h2 class="item-title">ListTitle6</h2>
+                <p class="item-description">QRコード共有機能により、作成したプロジェクトルールをQRコードで簡単に共有・複製できます。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 7 -->
+            <div class="list-item">
+                <div class="item-number">7</div>
+                <div class="item-thumbnail">⭐</div>
+                <h2 class="item-title">ListTitle7</h2>
+                <p class="item-description">お気に入り・履歴管理機能により、重要なコンテンツをお気に入りに登録し、閲覧履歴から素早くアクセスできます。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 8 -->
+            <div class="list-item">
+                <div class="item-number">8</div>
+                <div class="item-thumbnail">🎯</div>
+                <h2 class="item-title">ListTitle8</h2>
+                <p class="item-description">高度な抽出機能により、動的コンテンツや遅延読み込みコンテンツも適切に処理し、確実にデータを取得できます。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+            
+            <!-- List Item 9 -->
+            <div class="list-item">
+                <div class="item-number">9</div>
+                <div class="item-thumbnail">🚀</div>
+                <h2 class="item-title">ListTitle9</h2>
+                <p class="item-description">パフォーマンス最適化により、大量のデータでも高速に処理し、スムーズなユーザー体験を提供します。</p>
+                <a href="#" class="item-link">詳細を見る</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
